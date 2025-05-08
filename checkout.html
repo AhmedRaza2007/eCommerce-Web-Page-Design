@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/ca86787c55.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+
+    <title>eCommerce Web Page Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style></head>
+<body>
+    <header>
+        <nav class="bg-white fixed w-full z-31 top-0 start-0  ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./img/logo.svg" class="h-8" alt="Flowbite Logo">
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+                    <ul class="flex-row flex lg:gap-10 gap-3 items-center">
+                        <li>
+                            <a href="index.html" class="hover:text-yellow-700"><i
+                                    class="fa-regular fa-user text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="shop.html" class="hover:text-yellow-700"><i
+                                    class="fa-solid fa-magnifying-glass text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="hover:text-yellow-700"><i
+                                    class="fa-regular fa-heart text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="hover:text-yellow-700"><i
+                                    class="fa-solid fa-cart-shopping text-base"></i></a>
+                        </li>
+
+                    </ul>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                        <li>
+                            <a href="index.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">Shop</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-cover bg-center h-70 mt-20 flex flex-col justify-center items-center text-center px-4 md:px-8"
+            style="background-image: url('./img/shop-bg-img.svg')">
+            <img src="./img/meubel-house_Logo.svg" alt="">
+            <h1 class="text-3xl md:text-5xl font-bold text-black font-medium">Checkout</h1>
+            <nav class="text-sm md:text-base mt-2 text-black">
+                <a href="/" class="font-semibold hover:underline">Home</a>
+                <span class="mx-1"><i class="fa-solid fa-chevron-right"></i></span>
+                <span>Checkout</span>
+            </nav>
+        </div>
+    </header>
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10">
+      
+          <div class="px-8">
+            <h2 class="text-2xl font-semibold mb-8">Billing details</h2>
+            <form class="space-y-6">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-medium">First Name</label>
+                  <input type="text" class="mt-1 w-full border rounded-md px-3 py-2" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium">Last Name</label>
+                  <input type="text" class="mt-1 w-full border rounded-md px-3 py-2" />
+                </div>
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Company Name (Optional)</label>
+                <input type="text" class="mt-1 w-full border rounded-md px-3 py-2" />
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Country / Region</label>
+                <select class="mt-1 w-full border rounded-md px-3 py-2">
+                  <option>Pakistan</option>
+                  <option>Sri Lanka</option>
+                  <option>India</option>
+                  <option>UK</option>
+                </select>
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Street address</label>
+                <input type="text" class="mt-1 w-full border rounded-md px-3 py-2" />
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Town / City</label>
+                <input type="text" class="mt-1 w-full border rounded-md px-3 py-2" />
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Province</label>
+                <select class="mt-1 w-full border rounded-md px-3 py-2">
+                  <option>Western Province</option>
+                  <option>Central Province</option>
+                </select>
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">ZIP code</label>
+                <input type="text" class="mt-1 w-full border rounded-md px-3 py-2" />
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Phone</label>
+                <input type="text" class="mt-1 w-full border rounded-md px-3 py-2" />
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Email address</label>
+                <input type="email" class="mt-1 w-full border rounded-md px-3 py-2" />
+              </div>
+      
+              <div>
+                <label class="block text-sm font-medium">Additional information</label>
+                <textarea class="mt-1 w-full border rounded-md px-3 py-2" placeholder="Additional information"></textarea>
+              </div>
+            </form>
+          </div>
+      
+          <div class="p-8 rounded-md">
+            <h2 class="text-xl font-semibold mb-6">Product</h2>
+      
+            <div class="flex justify-between mb-4 text-sm">
+              <span>Asgaard sofa × 1</span>
+              <span>Rs. 250,000.00</span>
+            </div>
+            <hr class="my-4" />
+      
+            <div class="flex justify-between mb-2 text-sm text-gray-600">
+              <span>Subtotal</span>
+              <span>Rs. 250,000.00</span>
+            </div>
+      
+            <div class="flex justify-between text-lg font-semibold text-yellow-600">
+              <span>Total</span>
+              <span>Rs. 250,000.00</span>
+            </div>
+      
+            <div class="mt-8 space-y-4 text-sm text-gray-700">
+              <div>
+                <input type="radio" id="bank" name="payment" checked class="mr-2" />
+                <label for="bank" class="font-medium">Direct Bank Transfer</label>
+                <p class="mt-2 text-xs text-gray-500">
+                  Make your payment directly into our bank account. Please use your Order ID as the payment reference...
+                </p>
+              </div>
+              <div>
+                <input type="radio" id="bank2" name="payment" disabled class="mr-2 text-gray-400" />
+                <label for="bank2" class="text-gray-400">Direct Bank Transfer</label>
+              </div>
+              <div>
+                <input type="radio" id="cod" name="payment" class="mr-2" />
+                <label for="cod">Cash On Delivery</label>
+              </div>
+              <p class="text-xs mt-4">
+                Your personal data will be used to support your experience... Read our
+                <a href="#" class="underline font-medium">privacy policy</a>.
+              </p>
+            </div>
+      
+            <button class="mt-6 w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition">
+              Place order
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="bg-[#FAF3EA] l:px-8 p-6 lg:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <img src="./img/product-img-4.svg" alt="">
+
+                </div>
+                <div>
+                 <img src="./img/product-img-1.svg" alt="">
+                </div>
+
+                <div>
+                    <img src="./img/product-img-2.svg" alt="">
+
+                </div>
+
+                <div>
+                    <img src="./img/product-img-3.svg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white text-black px-6 md:px-16 pt-10 pb-6 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Funiro.</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            400 University Drive Suite 200 Coral Gables,<br />
+            FL 33134 USA
+          </p>
+        </div>
+    
+        <div>
+          <h3 class="text-gray-400 font-medium mb-4 pb-12">Links</h3>
+          <ul class="space-y-3 text-sm font-medium">
+            <li class="pb-12"><a href="#" class="hover:underline">Home</a></li>
+            <li class="pb-12"><a href="#" class="hover:underline">Shop</a></li>
+            <li class="pb-12"><a href="#" class="hover:underline">About</a></li>
+            <li class="pb-12"><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div>
+          <h3 class="text-gray-400 font-medium mb-4 pb-12">Help</h3>
+          <ul class="space-y-3 text-sm font-medium">
+            <li class="pb-12"><a href="#" class="hover:underline">Payment Options</a></li>
+            <li class="pb-12"><a href="#" class="hover:underline">Returns</a></li>
+            <li class="pb-12"><a href="#" class="hover:underline">Privacy Policies</a></li>
+          </ul>
+        </div>
+    
+        <div>
+          <h3 class="text-gray-400 font-medium mb-4 pb-12">Newsletter</h3>
+          <div class="flex w-full max-w-xs">
+           <div class="border-b border-black">
+            <input
+            type="email"
+            placeholder="Enter Your Email Address"
+            class="w-full outline-none text-sm py-1 px-2 placeholder:text-gray-500"
+          />
+           </div>
+            <button type="submit" class="ml-2 text-sm font-semibold px-2 border-b border-black hover:text-gray-600">
+              SUBSCRIBE
+            </button>
+          </div>
+         </div>
+      </div>
+    
+      <div class="border-t border-gray-300 mt-10 pt-4 text-base text-black">
+        2023 funiro. All rights reverved
+      </div>
+    </footer>
+</body>
+</html>
