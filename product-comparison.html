@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/ca86787c55.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+
+    <title>Product Comparison</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style></head></head>
+<body>
+    <header>
+        <nav class="bg-white fixed w-full z-31 top-0 start-0  ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./img/logo.svg" class="h-8" alt="Flowbite Logo">
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+                    <ul class="flex-row flex lg:gap-10 gap-3 items-center">
+                        <li>
+                            <a href="index.html" class="hover:text-yellow-700"><i
+                                    class="fa-regular fa-user text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="shop.html" class="hover:text-yellow-700"><i
+                                    class="fa-solid fa-magnifying-glass text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="hover:text-yellow-700"><i
+                                    class="fa-regular fa-heart text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="hover:text-yellow-700"><i
+                                    class="fa-solid fa-cart-shopping text-base"></i></a>
+                        </li>
+
+                    </ul>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                        <li>
+                            <a href="index.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">Shop</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-cover bg-center h-70 mt-20 flex flex-col justify-center items-center text-center px-4 md:px-8"
+            style="background-image: url('./img/shop-bg-img.svg')">
+            <img src="./img/meubel-house_Logo.svg" alt="">
+            <h1 class="text-3xl md:text-5xl font-bold text-black font-medium">Product Comparison</h1>
+            <nav class="text-sm md:text-base mt-2 text-black">
+                <a href="/" class="font-semibold hover:underline">Home</a>
+                <span class="mx-1"><i class="fa-solid fa-chevron-right"></i></span>
+                <span>Comparison</span>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class=" py-10 px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                <div class="pt-6">
+                    <h4 class="text-3xl font-medium mb-5">Go to Product page for more 
+                        Products</h4>
+                    <a href="#" class="underline text-gray-400">View More</a>
+                  </div>
+              <div class="bg-white p-2">
+                <img src="./img/product-1.svg" alt="Product 1" />
+                <h4 class="pb-2 pt-5 text-2xl font-medium">Asgaard Sofa</h4>
+                <h4 class="pb-2 text-lg font-medium">Rs. 250,000.00</h4>
+                <div class="text-yellow-400 text-lg mt-2 flex items-center">
+                  <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i> <span class="text-[#9F9F9F] ml-1 border-l pl-2">204 Reviews</span>
+                </div>
+              </div>
+          
+              <div class="bg-white p-2">
+                <img src="./img/product-2.png" alt="Product 1" />
+                <h4 class="pb-2 pt-5 text-2xl font-medium">Outdoor Sofa Set</h4>
+                <h4 class="pb-2 text-lg font-medium">Rs. 224,000.00</h4>
+                <div class="text-yellow-400 text-lg mt-2 flex items-center">
+                  <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i> <span class="text-[#9F9F9F] ml-1 border-l pl-2">148 Reviews</span>
+                </div>
+              </div>
+          
+              <div>
+                <h4 class="text-2xl font-semibold">Add A Product</h4>
+                <select class="bg-[#B88E2F] text-white px-8 py-2 rounded shadow">
+                  <option>Choose a Product</option>
+                  <option>Product A</option>
+                  <option>Product B</option>
+                </select>
+              </div>
+            </div>
+          
+            div class="p-6 bg-white text-sm text-gray-800">
+  <div class="grid grid-cols-3 gap-6">
+    <!-- Left Column for labels -->
+    <div class="space-y-6">
+      <div>
+        <h2 class="font-bold text-lg mb-4">General</h2>
+        <div class="space-y-2">
+          <div>Sales Package</div>
+          <div>Model Number</div>
+          <div>Secondary Material</div>
+          <div>Configuration</div>
+          <div>Upholstery Material</div>
+          <div>Upholstery Color</div>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-bold text-lg mb-4">Product</h2>
+        <div class="space-y-2">
+          <div>Filling Material</div>
+          <div>Finish Type</div>
+          <div>Adjustable Headrest</div>
+          <div>Maximum Load Capacity</div>
+          <div>Origin of Manufacture</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div class="space-y-6">
+      <div class="mt-10">
+        <div class="space-y-2">
+          <div>1 sectional sofa</div>
+          <div>TFCBLIGRBL6SRHS</div>
+          <div>Solid Wood</div>
+          <div>L-shaped</div>
+          <div>Fabric + Cotton</div>
+          <div>Bright Grey & Lion</div>
+        </div>
+      </div>
+      <div>
+        <div class="space-y-2">
+          <div>Foam</div>
+          <div>Bright Grey & Lion</div>
+          <div>No</div>
+          <div>280 KG</div>
+          <div>India</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="space-y-6">
+      <div class="mt-10">
+        <div class="space-y-2">
+          <div>1 Three Seater, 2 Single Seater</div>
+          <div>DTUBLIGRBL568</div>
+          <div>Solid Wood</div>
+          <div>L-shaped</div>
+          <div>Fabric + Cotton</div>
+          <div>Bright Grey & Lion</div>
+        </div>
+      </div>
+      <div>
+        <div class="space-y-2">
+          <div>Matte</div>
+          <div>Bright Grey & Lion</div>
+          <div>Yes</div>
+          <div>300 KG</div>
+          <div>India</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+    </section>
+</body>
+</html>
